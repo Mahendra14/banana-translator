@@ -2,8 +2,11 @@
 
 // alert("this script works");
 // var username = prompt("type username");
+var txtInput = document.querySelector("#txt-input");
 var btnTranslate = document.querySelector("#btn-translate");
-btnTranslate.addEventListener("click",function clickEventHandler(){
+function clickEventHandler(){
     // alert("clicked");
+    console.log("input",txtInput.value)
     
-});
+};
+btnTranslate.addEventListener("click",clickEventHandler);
