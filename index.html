@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Translator</title>
-    <style>
-        textarea{
-            width: 80%;
-            height: 10vh;
-            margin: 1rem;
-            padding: 1rem;
-            display: block;
-        }
-        #output{
-border: 1px solid black;
-height: 10vh;
-width: 80%;
-margin: 1rem;
-padding: 1rem;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Talk Banana</h1>
-    <textarea
-    id="txt-input"
-    placeholder="Enter in English to convert to Bananas!"></textarea>
-    <button id="btn-translate">Translate</button>
-    <div style="font-size: larger;">Output will come here 👇🏻</div>
-    <div id="output" >
-        
-    </div>
+    <!-- <h2>@nav</h2> -->
+    
+        <nav class="navigation container">
+            <div class="nav-brand"><i><strong>Minion Way to Talk</strong></i></div>
+            <br>
+            <br>
+        </nav>
+        <main>
+        <textarea
+        class="txt-input"
+        id="txt-input1"
+        placeholder="Enter in English to convert to Bananas!"></textarea>
+        <button id="btn-translate">Translate</button>
+        <!-- <div class = "txt-input"style="font-size: larger;">Output will come here 👇🏻</div> -->
+        <div class = "txt-input" >
+            <textarea id="output1" placeholder="Output will be here"></textarea>
+        </div>
+    </main>
+    <footer class="footer">
+        <div style="font-size: x-large;">about</div>
+        <p>
+            Are you a fan of minions?
+            <br>Use the translator
+            to convert your text to Minion spoken language.
+        </p>
+    </footer>
     <script src="app.js" type="text/javascript"></script>
 </body>
 </html>
